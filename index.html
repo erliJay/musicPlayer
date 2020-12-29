@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>music_player</title>
+  <!--  滚动条插件-->
+  <link rel="stylesheet" href="public/css/jquery.mCustomScrollbar.css">
+  <link rel="stylesheet" href="public/css/index.css">
+  <!--  旋转图片-->
+  <link rel="stylesheet" href="public/css/rotate.css">
+
+  <script src="public/js/jquery-1.12.4.min.js"></script>
+  <!--  滚动条插件-->
+  <script src="public/js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <!--  播放器封装-->
+  <script src="public/js/player.js"></script>
+  <!--  进度条封装-->
+  <script src="public/js/progress.js"></script>
+  <!--  歌词信息封装-->
+  <script src="public/js/lyric.js"></script>
+  <script src="public/js/index.js"></script>
+</head>
+<body>
+<!--头部内容区-->
+<div class="header">
+  <h1 class="logo">music player</h1>
+  <ul class="register">
+    <li><a href="https://github.com/hazyram?tab=repositories" target="_blank">GitHub</a></li>
+    <li><a href="#">回到主页</a></li>
+  </ul>
+</div>
+<!--中间内容区-->
+<div class="content">
+  <div class="content_in">
+    <div class="content_left">
+<!--      <div class="content_toolbar">
+        <span><i></i>收藏</span>
+        <span><i></i>添加到</span>
+        <span><i></i>下载</span>
+        <span><i></i>删除</span>
+        <span><i></i>清空列表</span>
+      </div>-->
+      <div class="content_list" data-mcs-theme="minimal-dark">
+        <ul>
+          <li class="list_title">
+<!--            <div class="list_check"><i></i></div>-->
+            <div class="list_number"></div>
+            <div class="list_name">歌曲</div>
+            <div class="list_singer">歌手</div>
+            <div class="list_time">时长</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="content_right">
+      <div class="song_info">
+        <a href="javascript:;" class="song_info_pic">
+          <img src="" alt="">
+        </a>
+        <div class="song_info_name">歌曲名称：
+          <a href="javascript:;"></a>
+        </div>
+        <div class="song_info_singer">歌手名：
+          <a href="javascript:;"></a>
+        </div>
+        <div class="song_info_album">专辑名称：
+          <a href="javascript:;"></a>
+        </div>
+      </div>
+      <div class="song_lyric_container">
+        <ul class="song_lyric"></ul>
+      </div>
+    </div>
+  </div>
+</div>
+<!--底部内容区-->
+<div class="footer">
+  <div class="footer_in">
+    <a href="javascript:;" class="music_pre"></a>
+    <a href="javascript:;" class="music_play"></a>
+    <a href="javascript:;" class="music_next"></a>
+    <div class="music_progress_info">
+      <div class="music_progress_top">
+        <span class="music_progress_name"></span>
+        <span class="music_progress_time"></span>
+      </div>
+      <div class="music_progress_bar">
+        <div class="music_progress_line">
+          <div class="music_progress_dot"></div>
+        </div>
+      </div>
+    </div>
+
+    <!--<a href="javascript:;" class="music_mode"></a>
+    <a href="javascript:;" class="music_fav"></a>
+    <a href="javascript:;" class="music_down"></a>
+    <a href="javascript:;" class="music_comment"></a>
+    <a href="javascript:;" class="music_pure"></a>-->
+    <div class="music_voice_info">
+      <a href="javascript:;" class="music_voice_icon"></a>
+      <div class="music_voice_bar">
+        <div class="music_voice_line">
+          <div class="music_voice_dot"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--背景-->
+<div class="mask_bg"></div>
+<!--遮罩-->
+<div class="mask"></div>
+<!--音频-->
+<audio src=""></audio>
+<!--3D旋转-->
+<div class="rotate">
+  <ul>
+    <li><img src="public/source/AslongASLoveMe.jpg"/></li>
+    <li><img src="public/source/SomethingJustLikeThis.jpg"/></li>
+    <li><img src="public/source/YourSong.jpg"/></li>
+    <li><img src="public/source/凉凉.jpg"/></li>
+    <li><img src="public/source/告白气球.jpg"/></li>
+    <li><img src="public/source/小城大事.jpg"/></li>
+  </ul>
+  <img src="public/images/xin.png" class="heart">
+</div>
+</body>
+</html>
